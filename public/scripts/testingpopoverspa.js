@@ -46,6 +46,7 @@ function getServices(category) {
 						$("<a />")
 							.text(service.ServiceName)
 							.attr("href", "#")
+							.attr("id", service.ServiceID)
 							.on("click", e => {
 								e.preventDefault();
 								getService(service.ServiceID);
@@ -59,10 +60,25 @@ function getServices(category) {
 
 function getService(serviceId) {
 	$.getJSON(`/api/services/${serviceId}`, service => {
-        $("#cardImage").attr("src", "../images/nailtest.jpg");
-        $("#cardTitle").html(service.ServiceName);
-		$("#cardText1").html("Service ID: " + service.ServiceID);
-		$("#cardText2").html("$" + Number(service.Price).toFixed(2));
-		$("#serviceCard").css("display", "inline-block");
+		$(`#${service.ServiceID}`).attr("data-toggle", "popover");
+		$(`#${service.ServiceID}`).attr("data-placement", "auto");
+		$(`#${service.ServiceID}`).attr("data-container", "body");
+		$(`#${service.ServiceID}`).attr("data-html", "true");
+		$(`#${service.ServiceID}`).css("display", "inline-block");
+		$('[data-toggle="popover"]').popover({
+			html: true,
+			content: function() {
+				return $(`#${service.ServiceID}`).html(
+					`
+                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="../images/nailtest.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Price: $ ${Number(service.Price).toFixed(2)}</p>
+
+  </div>
+</div>`
+				);
+			},
+		});
 	});
 }

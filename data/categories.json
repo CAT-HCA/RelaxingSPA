@@ -1,26 +1,32 @@
 [
 	{
         "Category": "Acupuncture",
-        "Value": "ACU"
+        "Value": "ACU",
+        "Count": "3"
 	},
 	{
         "Category": "Body Treatments",
-        "Value": "BODY"
+        "Value": "BODY",
+        "Count": "4"
 	},
 	{
         "Category": "Hair Salon",
-        "Value": "HAIR"
+        "Value": "HAIR",
+        "Count": "3"
 	},
 	{
         "Category": "Massage and Bodywork",
-        "Value": "MASS"
+        "Value": "MASS",
+        "Count": "8"
 	},
 	{
         "Category": "Nail Salon",
-        "Value": "NAILS"
+        "Value": "NAILS",
+        "Count": "3"
         },	
         {
         "Category": "Skin Care",
-        "Value": "SKIN"
+        "Value": "SKIN",
+        "Count": "3"
 	}
 ]
