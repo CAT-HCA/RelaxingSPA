@@ -121,7 +121,7 @@
     },    
     {
         "ServiceID": "HAIR2",
-        "ServiceName": "Men's Hair Cut",
+        "ServiceName": "Women's Hair Cut",
         "Description": "Women's Hair Cut",
         "Price": "125.00",
         "Minutes": "60",
