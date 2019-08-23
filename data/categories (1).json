@@ -1,0 +1,26 @@
+[
+	{
+        "Category": "Acupuncture",
+        "Value": "ACU"
+	},
+	{
+        "Category": "Body Treatments",
+        "Value": "BODY"
+	},
+	{
+        "Category": "Hair Salon",
+        "Value": "HAIR"
+	},
+	{
+        "Category": "Massage and Bodywork",
+        "Value": "MASS"
+	},
+	{
+        "Category": "Nail Salon",
+        "Value": "NAILS"
+        },	
+        {
+        "Category": "Skin Care",
+        "Value": "SKIN"
+	}
+]
