@@ -62,20 +62,28 @@
                 <div class="col-md-5">
                     <ul id="servicesList" class="list-group"></ul>
                 </div>
-                    <div class="col-6">
-                        <div class="hidden" id="serviceCard">
-                            <div class="card" style="width: 18rem;">
-                                <img id="cardImage" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h4 class="card-title" id="cardTitle">&nbsp;</h4>
-                                    <p class="card-text" id="cardText1">&nbsp;</p>
-                                    <p class="card-text" id="cardText2">&nbsp;</p>
+                    <div class="accordion" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="cardTitle">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Collapsible Group Item #1
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="cardTitle"
+                                data-parent="#accordion">
+                                <div id="#cardImage"></div>
+                                <div id="#cardText1">
+                                </div>
+                                <div id="#cardText2">
                                 </div>
                             </div>
                         </div>
-                  
+
                 </div>
-            </div>
         </section>
     </main>
 

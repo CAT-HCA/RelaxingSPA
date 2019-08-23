@@ -62,7 +62,7 @@ function getService(serviceId) {
         $("#cardImage").attr("src", "../images/nailtest.jpg");
         $("#cardTitle").html(service.ServiceName);
 		$("#cardText1").html("Service ID: " + service.ServiceID);
-		$("#cardText2").html("$" + Number(service.Price).toFixed(2));
-		$("#serviceCard").css("display", "inline-block");
+        $("#cardText2").html("$" + Number(service.Price).toFixed(2));
+        $("#collapseOne").addClass("show");
 	});
 }
