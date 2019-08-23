@@ -35,10 +35,51 @@
     </nav>
     <!--END NAV BAR-->
 
+    <!-- jumbotron -->
+    <div class="jumbotron text-center" id="jtron">
+        <span class="align-bottom">
+            <button type="button" id="jtronBtn" class="btn btn-primary btn-lg">Plan your day of
+                relaxation</button>
+            </span>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="container text-center mt-5 dropdown">
+            <button class="btn btn-outline-info dropdown-toggle hidden" type="button" id="viewCategories" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">View Categories</button>
+            <section id="categoryContainer" class="hidden">
+                <div id="categoryList" class="dropdown-menu">
+                </div>
+            </section>
+            <section class="container hidden" id="servicesContainer">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3 id="categoryName">&nbsp;</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul id="servicesList" class="list-group"></ul>
+                        <div class="hidden" id="serviceCard">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title" id="cardTitle">&nbsp;</h4>
+                                    <p class="card-text" id="cardText1">&nbsp;</p>
+                                    <p class="card-text" id="cardText2">&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
     <!-- END OF MAIN CONTENT -->
 
     <!-- FOOTER -->
-    <footer class=" w-100 footer border-top border-primary fixed-bottom">
+    <footer class=" w-100 footer border-top border-primary">
         <div class="col-12 text-center">
             <p>Cori Trudeau - HartCode Academy 2019 <br>
                 <span class="font-weight-light mt-1">Disclaimer: This is a fictional website and University</span></p>
@@ -55,7 +96,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="scripts/spa.js"></script>
+    <script src="scripts/spa.js"></script>
 </body>
 
 </html>
