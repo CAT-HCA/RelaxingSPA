@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- linking custom bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/custom_bootstrap.css">
+
     <!-- linking custom site CSS -->
     <link rel="stylesheet" type="text/css" href="css/site.css">
 
     <!--Title and favicon in tab-->
     <link rel="icon" href="images/robicon.png" type="image/x-icon" />
-    <title>CAT Spa</title>
+    <title>Relaxing SPA</title>
 </head>
 
 <body>
@@ -30,17 +33,20 @@
         </button>
         <div class="collapse navbar-collapse float-right flex-row-reverse" id="navbarNavAltMarkup">
             <div class="navbar-nav"></div>
-            <a class="nav-item nav-link p-2 mr-2 inactive" href="courses.html">View Our Spa Menu</a>
+            <a class="nav-item nav-link p-2 mr-2 inactive" href="#">View Our Menu of Spa Services</a>
         </div>
     </nav>
     <!--END NAV BAR-->
 
     <!-- jumbotron -->
-    <div class="jumbotron text-center" id="jtron">
-        <span class="align-bottom">
-            <button type="button" id="jtronBtn" class="btn btn-primary btn-lg">Plan your day of
-                relaxation</button>
-        </span>
+
+    <div class="jumbotron jumbotron-fluid text-center my-auto" id="jtron">
+        <div class="container" id="btnDiv">
+            <div class="justify-content-center">
+                <button type="button" id="jtronBtn" class="btn btn-info btn-lg">Plan your day of
+                    relaxation</button>
+                </div>
+        </div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -62,26 +68,25 @@
                 <div class="col-md-5">
                     <ul id="servicesList" class="list-group"></ul>
                 </div>
-                    <div class="accordion" id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="cardTitle">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Collapsible Group Item #1
-                                    </button>
-                                </h2>
-                            </div>
+                <div class="accordion" id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="cardTitle">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                </button>
+                            </h2>
+                        </div>
 
-                            <div id="collapseOne" class="collapse" aria-labelledby="cardTitle"
-                                data-parent="#accordion">
-                                <div id="#cardImage"></div>
-                                <div id="#cardText1">
-                                </div>
-                                <div id="#cardText2">
-                                </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="cardTitle" data-parent="#accordion">
+                            <div id="#cardImage"></div>
+                            <div id="#cardText1">
+                            </div>
+                            <div id="#cardText2">
                             </div>
                         </div>
+                    </div>
 
                 </div>
         </section>
