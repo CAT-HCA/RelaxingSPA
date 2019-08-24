@@ -89,10 +89,10 @@ app.get('/index.html', function (req, res) {
     let data = fs.readFileSync( __dirname + "/data/" + "categories.json", 'utf8');
     data = JSON.parse(data);
     
-    //calls to JSON.parse and JSON.stringify not needed if debugging removed
+    // calls to JSON.parse and JSON.stringify not needed if debugging removed
     //console.log("Returned data is: ");
     //for(let i=0; i < data.length; i++)
-    //    console.log(data.Category + " - " + data.Value);
+      // console.log(data.Category + " - " + data.Value);
     res.end( JSON.stringify(data) );
 });
 
@@ -160,20 +160,20 @@ app.get('/api/services/bycategory/:id', function (req, res) {
     console.log( "Value was : " + id + " which matched category " + selectedCategory);
 
     let data = fs.readFileSync( __dirname + "/data/services.json", 'utf8');
-    //console.log("DATA--> " + data);
+    console.log("DATA--> " + data);
 
     // strips off bad characters which seem to be in services.json
     data = data.toString();
     data = data.replace(/[^\x20-\x7E]/g, '');
-    ///console.log("DATA--> " + data);
+    console.log("DATA--> " + data);
 
     data = JSON.parse(data);
 
     // find the matching services
     let matches = getMatchingServicesByCategory(selectedCategory, data);
 
-    //console.log("Returned data is: ");
-    //logArrayOfServices(matches);
+    console.log("Returned data is: ");
+    logArrayOfServices(matches);
     res.end( JSON.stringify(matches) );
 })
  
